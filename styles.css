@@ -5,79 +5,132 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background: #2f1f0f url('https://cdn.clashofclans.com/path-to-your-background.jpg') no-repeat center center;
+  font-family: 'Roboto', sans-serif;
+  background: #2f1f0f url('https://wall.alphacoders.com/big.php?i=847433') no-repeat center center;
   background-size: cover;
+  background-attachment: fixed; /* Keeps the background stationary on scroll */
   color: #fff;
   line-height: 1.6;
 }
 
+h1, h2 {
+  font-family: 'MedievalSharp', cursive;
+}
+
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
   text-align: center;
   padding: 60px 20px;
   background-color: rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px #000;
 }
 
 header h1 {
-  font-size: 3em;
+  font-size: 4.5em;
   color: #f5c518;
 }
 
 header p {
-  margin: 10px 0 20px;
+  font-size: 1.2em;
+  margin: 10px 0 30px;
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 25px;
+  padding: 12px 30px;
   background: #f5c518;
   color: #000;
   font-weight: bold;
   border-radius: 8px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  border: 2px solid #f5c518;
 }
 
 .btn:hover {
-  background: #e0aa17;
+  background: transparent;
+  color: #f5c518;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 section {
-  padding: 40px 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 20px;
+  padding: 40px 30px;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 30px;
   border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 h2 {
   color: #ffa500;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.regras ul {
+  list-style: none;
+  padding: 0;
+}
+
+.regras li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.1em;
+}
+
+.regras li:last-child {
+  border-bottom: none;
+}
+
+.convite {
   text-align: center;
 }
 
-ul li {
-  list-style: none;
-  padding: 8px 0;
-  border-bottom: 1px solid #fff3;
+.convite p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 15px 30px;
   font-weight: bold;
+  font-size: 1em;
   background: #f5c518;
+  color: #000;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 button:hover {
   background: #d9a315;
+  transform: scale(1.05);
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
 }
