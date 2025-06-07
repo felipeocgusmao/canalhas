@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #2f1f0f url('https://cdn.clashofclans.com/path-to-your-background.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+  font-size: 3em;
+  color: #f5c518;
+}
+
+header p {
+  margin: 10px 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #f5c518;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e0aa17;
+}
+
+section {
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  border-radius: 12px;
+}
+
+h2 {
+  color: #ffa500;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  padding: 8px 0;
+  border-bottom: 1px solid #fff3;
+}
+
+button {
+  padding: 10px 20px;
+  font-weight: bold;
+  background: #f5c518;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #d9a315;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 0.9em;
+}
